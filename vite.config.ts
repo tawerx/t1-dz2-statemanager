@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "t1-dz1-todolist",
+  base: "t1-dz2-statemanager",
   plugins: [react()],
   resolve: {
     alias: {
