@@ -1,0 +1,20 @@
+.taskListTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.taskList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}

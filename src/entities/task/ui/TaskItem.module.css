@@ -1,0 +1,149 @@
+.taskItem {
+  width: 360px;
+  height: 170px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.taskItem:hover {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.taskItemBody {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  height: 100%;
+}
+.taskItemBodyLeftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.taskItemBodyTitle {
+  margin-bottom: 10px;
+}
+
+.taskItemBodyTitle span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.taskItemBodyDescription {
+  width: 230px;
+  white-space: nowrap; /* не переносить строки */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.taskItemBodyDescription span {
+  font-size: 0.9rem;
+}
+.taskItemBodyBottom {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.taskItemBodyBottom div {
+  max-width: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.taskItemControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Priority (Приоритет) */
+.Low {
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.Medium {
+  background-color: #fff3cd;
+  color: #856404;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.High {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+/* Status (Статус) */
+.ToDo {
+  background-color: #fff3cd;
+  color: #0c5460;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.InProgress {
+  background-color: #cce5ff;
+  color: #856404;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.Done {
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+/* Category (Категория) */
+.Bug {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.Feature {
+  background-color: #cce5ff;
+  color: #0c5460;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.Documentation {
+  background-color: #e2d6f3;
+  color: #383d41;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.Refactor {
+  background-color: #e2e3e5;
+  color: #818182;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.Test {
+  background-color: #d4edda;
+  color: #6c757d;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
